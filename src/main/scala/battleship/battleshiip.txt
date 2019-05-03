@@ -1,0 +1,65 @@
+Battleship is a popular 2 player game that takes place on a 10 x 10 board. Ships of various sizes are placed on the 10 x 10 board either horizontally or vertically. The position of the ships are hidden to the user. Your task is to sink all the ships.
+
+Ships of the following size are given to each player.
+
+Submarine (1 x 1) - 2 units
+Destroyer (2 x 1) - 2 units
+Cruiser (3 x 1) - 1 unit
+Battleship(4 x 1) - 1 unit
+Carrier (5 x 1) - 1 unit
+In this version of the game, you will be playing solo. A testcase has a configuration of ship positions and your task is to destroy all the ships using the minimum number of moves.
+
+Input Format
+
+The first line contains N that denotes the size of the board. N lines follow, each containing 10 characters.
+If a cell is hit, it is denoted by character h (ascii value: 104).
+If a cell is a miss it is denoted by character m (ascii value: 109).
+If all the positions of a ship are destroyed, each of its position on the board is denoted by character d (ascii value: 100).
+If a cell is not attacked by the player, it is denoted by character - (ascii value: 45).
+
+The board is indexed according to Matrix Convention.
+
+Constraints
+
+N = 10
+
+Note
+Battleships can be touching each other.
+
+Output Format
+
+Output the cell to be hit in your current move. The output consists of two space separated integers R and C.
+
+Sample Input
+
+10
+----------
+----------
+--------m-
+----------
+--d-----m-
+---m-m----
+------m---
+-m---mm-h-
+--m-------
+------m---
+Sample Output
+
+7 9
+Resultant Board
+
+----------
+----------
+--------m-
+----------
+--d-----m-
+---m-m----
+------m---
+-m---mm-dd
+--m-------
+------m---
+Here, a ship was hit at row 7 and column 9. As the ship was completely destroyed, (7,8) and (7,9) each are represented by character d.
+
+Scoring
+
+score = (100 - moves_made)/5
