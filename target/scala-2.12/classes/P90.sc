@@ -1,1 +1,0 @@
-val matrix = Array.ofDim[Int](9,9)
