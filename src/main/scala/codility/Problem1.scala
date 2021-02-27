@@ -1,3 +1,4 @@
+/*
 package codility
 
 
@@ -32,4 +33,4 @@ object MainDemo extends App {
     println(Problem1.solution(13444))
   }
 
-}
+}*/

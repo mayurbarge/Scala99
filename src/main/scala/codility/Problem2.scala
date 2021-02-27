@@ -1,3 +1,4 @@
+/*
 package codility
 
 import scala.io.StdIn
@@ -65,3 +66,4 @@ object MainApp extends App {
   }
 
 }
+*/
